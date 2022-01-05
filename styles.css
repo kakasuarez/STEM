@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Nanum Gothic", sans-serif;
-}
-
 body {
-	background: rgb(231, 234, 238);
+	/* background: rgb(231, 234, 238); */
+	background-image: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif");
 }
 
 .heading-container-container {
@@ -27,8 +21,11 @@ body {
 	writing-mode: vertical-rl;
 	text-align: center;
 	letter-spacing: -0.5em;
-	color: rgb(22, 8, 61);
+	color: white;
 	font-size: 15px;
+	background-color:rgba(245, 245, 220, 0.411);
+	/* background-size: */
+	padding-bottom: 10px;
 }
 
 .first-letter {
@@ -41,6 +38,7 @@ body {
 	content: "";
 	background-size: 50px 50px;
 	background-image: var(--bg-im);
+	background-color: rgba(255, 255, 255, 0.418);
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 50px;
@@ -48,51 +46,9 @@ body {
 }
 
 .heading:hover:before {
-	background-color: rgba(255, 208, 0, 0.445);
+	background-color: white;
 }
 
 nav ul {
-	padding-top: 14px;
-	height: 62.5%;
-	width: 200px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background-color: rgb(117, 98, 98);
-	border-bottom-left-radius: 50px;
-}
-
-nav ul li {
-	list-style: none;
-}
-
-nav ul li a {
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 20px;
-	color: rgb(231, 234, 238);
-	position: relative;
-	padding: 25px 20px 25px 20px;
-}
-
-nav ul li a:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: rgb(231, 234, 238);
-	border-radius: 0 40px 40px 0;
-	z-index: -1;
-	transition: all 300ms ease-in-out;
-}
-
-nav ul li a:hover {
-	color: rgb(43, 38, 38);
-}
-
-nav ul li a:hover:before {
-	width: 92%;
+	height: 62.5% !important;
 }
