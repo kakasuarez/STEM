@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
 
-body {
-	/* background: rgb(231, 234, 238); */
-	background-image: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif");
-}
 
+#stem{
+	position: absolute;
+	float: left;
+	width: 100px;
+	margin: 4px 0px 0px 14px;
+}
 .heading-container-container {
 	margin-top: 10px;
 	display: flex;
@@ -21,7 +23,7 @@ body {
 	writing-mode: vertical-rl;
 	text-align: center;
 	letter-spacing: -0.5em;
-	color: white;
+	color: rgb(0, 0, 0);
 	font-size: 15px;
 	background-color:rgba(245, 245, 220, 0.411);
 	/* background-size: */
