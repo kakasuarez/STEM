@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
 
 body {
-    background-image: url("https://cdn.dribbble.com/users/1112010/screenshots/4147279/gif-2.gif");
+	background-image: url("../images/stem.gif");
     background-repeat: no-repeat;
-    background-size: 100%;
+	/* background-size: 100%; */
+    background-size: 100vw 110vh;
 }
+details{
+	position: absolute;
+	top: 350px;
+	left: 80px;
+	width: 70%;
+	font-size: 20px
+}
+p{
+	left: 100px	
+}
+summary{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 25px
+}
+
 #stem{
 	position: absolute;
 	float: left;

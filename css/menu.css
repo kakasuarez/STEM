@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	font-family: "Nanum Gothic", sans-serif;
 }
+nav {
+	position: sticky;
+}
 
 nav ul {
 	padding-top: 14px;
