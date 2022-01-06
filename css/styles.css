@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
 
-
+body {
+    background-image: url("https://cdn.dribbble.com/users/1112010/screenshots/4147279/gif-2.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 #stem{
 	position: absolute;
 	float: left;
@@ -48,7 +52,7 @@
 }
 
 .heading:hover:before {
-	background-color: white;
+	background-color: rgb(246, 200, 115);
 }
 
 nav ul {
