@@ -3,7 +3,6 @@
 body {
 	background-image: url("../images/stem.gif");
     background-repeat: no-repeat;
-	/* background-size: 100%; */
     background-size: 100vw 110vh;
 }
 details{
@@ -11,10 +10,10 @@ details{
 	top: 350px;
 	left: 80px;
 	width: 70%;
-	font-size: 20px
+	font-size: 20px;
 }
 p{
-	padding-left: 30px	
+	padding-left: 30px;
 }
 summary{
 	font-family: 'Baloo Paaji 2', cursive;

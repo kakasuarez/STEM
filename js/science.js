@@ -6,27 +6,27 @@ control.appendChild(im);
 
 
 const tl = anime.timeline({
-    duration: 4000,
+    duration: 1600,
     loop: true
 });
 tl.add({
-    targets: '.extremeleft',
+    targets: '.extremefirst',
     keyframes: [
-        {translateY: -40, translateX: -75},
-        {translateX: 0, translateY: 0},
+        {rotate: 35},
+        {rotate: 0},
     ],
-    duration: 1000,
-    easing: 'linear',
+    duration: 400,
+    easing: 'easeInOutSine',
     loop: true
 })
 .add({
-    targets: '.extremeright',
+    targets: '.extremelast',
     keyframes: [
-        {translateY: -40, translateX: 75},
-        {translateX: 0, translateY: 0},
+        {rotate: -35},
+        {rotate: 0},
     ],
-    duration: 1000,
-    easing: 'linear',
+    duration: 400,
+    easing: 'easeInOutSine',
     loop: true
 })
 
