@@ -1,5 +1,6 @@
 const control = document.querySelector('.control');
 const container = document.querySelector('.container');
+const cursor = document.querySelector(".line-1");
 
 
 const im = document.createElement("img");
@@ -50,4 +51,8 @@ control.onclick = pause;
 
 container.addEventListener("mouseover", () => {
     control.classList.add("hovered");
+})
+
+cursor.addEventListener("animationend", () => {
+    cursor.classList.add("none");
 })

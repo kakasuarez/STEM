@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Orelega+One&display=swap');
 body {
   background-image: url("../images/science.gif");
   background-repeat: no-repeat;
@@ -7,60 +8,48 @@ body {
 
 /* https://alvarotrigo.com/blog/10-cool-css-animations-to-add-to-your-website/ */
 /* oohhh lalalala */
-/* Google Fonts */
 
-/* Global */
-html{
-  min-height: 100%;
-  overflow: hidden;
+p{
+  color: rgb(230, 255, 8);
+  font-family: 'Bungee Inline', cursive;
 }
-body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(3, 0, 0, 0.75);
-  background-color: rgb(25,25,25);  
-  font-size: 20px;
-  font-weight: bold;
-}
+
 .line-1{
+  padding-top: 1.5em;
     position: relative;
     top: 50%;  
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size:600%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
 }
 
-/* Animation */
 .anim-typewriter{
+  height: max-content;
   animation: typewriter 1s steps(10) 1s 1 normal both,
-             blinkTextCursor 500ms steps(10) infinite normal;
+  blinkTextCursor 500ms steps(10) infinite normal;
 }
+
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 4em;}
+  to{width: 5em;}
 }
+
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
-
-
-
-
-
-
-
-
-
+.none {
+  border-right: none;
+}
 
 .el-container {
-  flex: 1;
+  margin: 120px 70px 0 70px;
   display: flex;
   padding: 10px;
 }
@@ -82,10 +71,11 @@ body{
 }
 
 .container {
+  border: 2px solid pink;
   position: absolute;
-  width: 220px;
-  height: 180px;
-  top: 50%;
+  width: 30%;
+  height: max-content;
+  top: 60%;
   left: 5%;
   align-items: center;
 }
@@ -105,6 +95,7 @@ body{
   position: relative;
   transform-origin: 50% -300%;
 }
+
 .el::before {
   content: "";
   width: 2px;
