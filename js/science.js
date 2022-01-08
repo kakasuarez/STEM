@@ -1,4 +1,6 @@
 const control = document.querySelector('.control');
+const container = document.querySelector('.container');
+
 
 const im = document.createElement("img");
 im.classList.add("control-im");
@@ -45,3 +47,7 @@ function pause() {
 
 im.src = "../images/pause.png";
 control.onclick = pause;
+
+container.addEventListener("mouseover", () => {
+    control.classList.add("hovered");
+})

@@ -1,75 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 
-body {
-	background-image: url("../images/stem.gif");
-    background-repeat: no-repeat;
-    background-size: 100vw 110vh;
+html {
+  background-image: url("../images/stem.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
-details{
-	position: absolute;
-	top: 350px;
-	left: 80px;
-	width: 70%;
-	font-size: 20px;
-}
-p{
-	padding-left: 30px;
-}
-summary{
-	font-family: 'Baloo Paaji 2', cursive;
-	font-size: 25px
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
 }
 
-#stem{
-	position: absolute;
-	float: left;
-	width: 100px;
-	margin: 4px 0px 0px 14px;
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #00aeff, #a68eff);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
+}
+
+#stem {
+  position: absolute;
+  float: left;
+  width: 100px;
+  margin: 4px 0px 0px 14px;
 }
 .heading-container-container {
-	margin-top: 10px;
-	display: flex;
-	justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .heading-container {
-	padding: 0.5%;
+  padding: 0.5%;
 }
 
 .heading {
-	font-family: 'Baloo Paaji 2', cursive;
-	text-orientation: upright;
-	writing-mode: vertical-rl;
-	text-align: center;
-	letter-spacing: -0.5em;
-	color: rgb(0, 0, 0);
-	font-size: 15px;
-	background-color:rgba(245, 245, 220, 0.411);
-	/* background-size: */
-	padding-bottom: 10px;
+  font-family: "Baloo Paaji 2", cursive;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  text-align: center;
+  letter-spacing: -0.5em;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  background-color: rgba(245, 245, 220, 0.411);
+  padding-bottom: 10px;
 }
 
 .first-letter {
-	margin-top: 10px;
-	font-weight: bold;
-	font-size: 1.5em;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .heading:before {
-	content: "";
-	background-size: 50px 50px;
-	background-image: var(--bg-im);
-	background-color: rgba(255, 255, 255, 0.418);
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 50px;
-	width: 50px;
+  content: "";
+  background-size: 50px 50px;
+  background-image: var(--bg-im);
+  background-color: rgba(255, 255, 255, 0.418);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
 
 .heading:hover:before {
-	background-color: rgb(246, 200, 115);
+  background-color: rgb(246, 200, 115);
 }
 
 nav ul {
-	height: 62.5% !important;
+  height: 62.5% !important;
+}
+
+.bigcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acc {
+  margin-top: 20px;
+  max-width: 800px;
+}
+.acc .content-container {
+  position: relative;
+  margin: 10px 20px;
+}
+.acc .content-container .label {
+  position: relative;
+  padding: 10px;
+  background: rgb(114, 33, 53);
+  color: rgb(246, 221, 195);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.acc .content-container .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acc .content-container.active .label::before {
+  content: "-";
+}
+.acc .content-container .content {
+  position: relative;
+  color: rgb(229, 162, 128);
+  background: rgb(46, 19, 49);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.acc .content-container.active .content {
+  height: max-content;
+  padding: 20px;
+}
+
+.cont {
+  width: 100%;
+  padding: 50px;
+  color: rgb(229, 162, 128);
+}
+
+.heading-cont {
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.heading-cont h1 {
+  font-weight: 400;
+  font-family: "Orelega One", cursive;
+  font-size: 2.25em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  height: max-content;
+  width: max-content;
+  padding: 2.5%;
+  border: 5px solid rgb(246, 221, 195);
+  border-radius: 14px;
+}
+
+.text-cont {
+  display: flex;
+  justify-items: center;
+}
+
+.text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.9em;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 1.6;
+  box-shadow: 7px 7px 5px rgb(66, 85, 160);
+  backdrop-filter: blur(20px);
+  border: 4px solid rgb(246, 221, 195);
+  z-index: 5;
+  margin: 10px 20px 0 10px;
+  max-width: 33%;
+  padding: 30px;
+  text-align: justify;
+  border-radius: 14px;
 }
