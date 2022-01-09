@@ -27,7 +27,7 @@ h1 {
   margin: 0 auto;
   margin-top: 20px;
   width: max-content;
-  font-size: 5rem;
+  font-size: 4rem;
   animation: pulsate 1.5s infinite alternate;
   border: 0.4rem solid white;
   border-radius: 2rem;
@@ -50,5 +50,25 @@ h1 {
       0 0 10px rgb(231, 44, 231), 0 0 45px rgb(231, 44, 231),
       0 0 55px rgb(231, 44, 231), 0 0 70px rgb(231, 44, 231),
       0 0 80px rgb(231, 44, 231);
+  }
+}
+
+.slider {
+  width: 500px;
+  height: 353px;
+  background: url("../images/card1.png");
+  margin: 50  px auto;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  33.33% {
+    background: url("../images/card1.png");
+  }
+  66.66% {
+    background: url("../images/card2.png");
+  }
+  99.99% {
+    background: url("../images/card3.png");
   }
 }
