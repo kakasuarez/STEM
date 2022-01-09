@@ -7,4 +7,4 @@ document.head.appendChild(styleEl);
 document.body.classList.add("bg-img");
 setTimeout(() => {
     document.documentElement.innerHTML = earlierHTML;
-}, 4500);
+}, 2200);

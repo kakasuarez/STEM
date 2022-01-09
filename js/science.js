@@ -1,6 +1,6 @@
 const control = document.querySelector('.control');
 const container = document.querySelector('.container');
-const cursor = document.querySelector(".line-1");
+const cursor = document.querySelector("#top-heading");
 
 
 const im = document.createElement("img");
