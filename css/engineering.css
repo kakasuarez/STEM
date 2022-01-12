@@ -111,10 +111,11 @@ body {
   position: relative;
   top: 50%;
   width: 35em;
-  color: darkblue;
-  background-color: greenyellow;
+  background-color: #050a30;
+  color: #75E6DA;
   border-radius: 10px;
   animation: slide 2s ease-in-out forwards;
+  border: 2px solid #0000ff;
 }
 
 .gear {
@@ -129,7 +130,7 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-  animation-delay: 3.1s;
+  animation-delay: 1s;
 }
 
 .gear button {
@@ -162,9 +163,8 @@ body {
   visibility: hidden;
 }
 
-
-@keyframes slide-right-gear{
-  from{
+@keyframes slide-right-gear {
+  from {
     margin-left: 0;
   }
   to {
@@ -172,9 +172,67 @@ body {
   }
 }
 
+#container-heading {
+  width: 50%;
+  display: block;
+  margin: 1em auto;
+  text-transform: uppercase;
+  padding: 1em;
+  background-image: linear-gradient(#294855, #162c41, #0a1f3f);
+  border: 5px solid rgb(13, 26, 61);
+  color: rgb(182, 201, 238);
+  border-radius: 0.5em;
+  font-size: 1.9em;
+  text-align: center;
+  text-shadow: 2px 2px 1px #00070e;
+}
+
 .container {
   height: 50%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex-direction: vertical;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 20em;
+  text-align: justify;
+  margin-bottom: 2em;
+  background-image: linear-gradient(to top right, #0b0b8a, #121d6e 20%, #050A30 50%, #121d6e 80%, #0b0b8a);
+  border-radius: 0.85em;
+  padding: 1em;
+  padding-bottom: 0;
+  border: 5px solid #050A30;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.055),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.082),
+  0 12.5px 10px rgba(0, 0, 0, 0.103),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.137),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.247),
+  0 100px 80px rgba(0, 0, 0, 0.356)
+;
+}
+
+.card h1 {
+  text-align: center;
+  margin: 11px;
+  text-transform: uppercase;
+  color: rgb(212, 241, 244);
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  right: 4%;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.card p {
+  padding: 1.5em;
+  color: rgb(177, 212, 224);
 }

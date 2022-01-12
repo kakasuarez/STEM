@@ -225,7 +225,8 @@ blockquote cite:before {
 }
 
 .scientist p {
-  border: 3px solid #C84B31;
+  border-width: 3px;
+  border-style: solid;
   margin-left: 30px;
   min-width: 35em;
   text-align: justify;
@@ -242,4 +243,16 @@ blockquote cite:before {
 
 #galileo ~ p {
   margin-top: 12px;
+}
+
+#apj{
+  border-color: #F04336;
+}
+
+#newton{
+  border-color: #ED4F84;
+}
+
+#galileo-p{
+  border-color: #FC9C01;  
 }

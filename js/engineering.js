@@ -16,5 +16,5 @@ const showGearButton = () => {
     gearButton.style.display = "block";
 }
 
-setTimeout(showGear, 3000);
-setTimeout(showGearButton, 4000);
+setTimeout(showGear, 1000);
+setTimeout(showGearButton, 2000);
