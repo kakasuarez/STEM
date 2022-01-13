@@ -133,20 +133,6 @@ body {
   animation-delay: 1s;
 }
 
-.gear button {
-  display: none;
-  width: max-content;
-  position: relative;
-  border-radius: 7px;
-  text-transform: uppercase;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  font-weight: bold;
-  background-color: red;
-  color: beige;
-}
-
 @keyframes slide {
   from {
     left: -50%;
