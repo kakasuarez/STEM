@@ -9,6 +9,7 @@ body {
   background-size: 100%;
   background-attachment: fixed;
 }
+
 #top-text {
   color: white;
   display: block;
@@ -19,12 +20,25 @@ body {
   margin: 0.5em auto;
 }
 
-/* #chart-container {
+#chart-container {
     height: max-content;
-    width: 40em;
-    background-color: white;
-} */
+    width: 20em;
+    background-color: black;
+    margin: 2em auto;
+    border-radius: 5px;
+}
 
+#chart-container h2 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#number, #color {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+}
 
 main {
   min-width: 300px;
@@ -92,16 +106,26 @@ main {
 
 h3 {
     color: pink;
-    text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
     margin-bottom: 0.5em;
+    width: max-content;
+    padding: 0.25em;
+    font-size: 1.15em;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgba(3, 10, 34, 0.568);
 }
 
 
 .equations {
-    color: white;
+    color: rgb(223, 166, 231);
     font-size: 1.5em;
     text-align: center;
+    background-image: linear-gradient(40deg, rgb(15, 97, 90), rgb(11, 105, 50));
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.1em;
+    border-radius: 5px;
   }
 
 .name {
@@ -110,9 +134,22 @@ h3 {
 
 
 #equation-heading {
-  color: white;
+  color: rgb(233, 148, 21);
   font-family: 'Arkhip', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 2%;
+  margin: 2% 0;
+  text-shadow: 7px 7px 3px rgb(1, 8, 37);
+}
+
+.description {
+  color: beige;
+  width: 60%;
+  margin: 0.5em auto;
+  line-height: 1.25em;
+  font-weight: 500;
+  font-size: 1.25em;
+  padding: 1.325em;
+  border-radius: 20px;
+  background-image: radial-gradient(circle farthest-side at 30%, black 45%, rgb(43, 7, 78), rgb(4, 4, 88));
 }
