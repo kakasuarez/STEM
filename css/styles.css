@@ -159,3 +159,31 @@ nav ul {
   text-align: justify;
   border-radius: 14px;
 }
+
+
+@media screen and (max-width: 760px) {
+  .heading-cont {
+    margin-left: -1.25em; 
+  }
+
+  .heading-cont h1 {
+    font-size: 1.75em;
+  }
+
+  .text-cont {
+    display: block;
+  }
+
+  .text {
+    min-width: 60%;
+  }
+
+  .acc {
+    max-width: 450px;
+    margin: 0;
+  }
+
+  .bigcontainer {
+    justify-content: flex-start;
+  }
+}

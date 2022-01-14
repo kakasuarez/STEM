@@ -267,3 +267,13 @@ blockquote cite:before {
 #galileo-p{
   border-color: #FC9C01;  
 }
+
+@media screen and (max-width: 760px) {
+  blockquote {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  #top-heading{
+    margin: 0;
+  }
+}

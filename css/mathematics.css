@@ -2,10 +2,9 @@
 @import url('http://fonts.cdnfonts.com/css/arkhip');
 
 body {
-  height: 100vh;
   background-image: url("../images/mathematics.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100vw 100vh;
   background-attachment: fixed;
 }
 
@@ -120,7 +119,7 @@ h3 {
     color: rgb(223, 166, 231);
     font-size: 1.5em;
     text-align: center;
-    background-image: linear-gradient(40deg, rgb(15, 97, 90), rgb(11, 105, 50));
+    background-image: linear-gradient(40deg, rgb(5, 5, 54), rgb(13, 49, 3));
     width: 40%;
     margin: 0 auto;
     padding: 0.1em;
