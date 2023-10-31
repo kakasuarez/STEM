@@ -1,0 +1,116 @@
+html {
+  background-image: url("https://photo.kidzworld.com/images/2019129/44956b6e-29a9-421c-a9b7-9a92ce0973a4/the-internet-history.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 4em;
+  padding: 10px;
+}
+.box {
+  background-color: rgb(168, 255, 226);
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.bigcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acc {
+  margin-top: 20px;
+  max-width: 800px;
+}
+.acc .content-container {
+  position: relative;
+  margin: 10px 20px;
+}
+.acc .content-container .label {
+  position: relative;
+  padding: 10px;
+  background: rgb(153, 30, 61);
+  color: rgb(246, 221, 195);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.acc .content-container .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acc .content-container.active .label::before {
+  content: "-";
+}
+.acc .content-container .content {
+  position: relative;
+  color: rgb(229, 162, 128);
+  background: rgb(46, 19, 49);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.acc .content-container.active .content {
+  height: max-content;
+  padding: 20px;
+}
+
+.cont {
+  padding: 50px;
+  color: rgb(64, 2, 116);
+}
+
+.heading-cont {
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.heading-cont h1 {
+  background-color: rgb(250, 250, 121);
+  font-size: 2.25em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  height: max-content;
+  width: max-content;
+  padding: 2.5%;
+  border: 5px solid rgb(246, 221, 195);
+  border-radius: 14px;
+}
+
+.text-cont {
+  display: flex;
+  justify-items: center;
+}
+
+.text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.9em;
+  text-transform: uppercase;
+}
+
+.text {
+  background-color: rgb(250, 250, 121);
+  line-height: 1.6;
+  box-shadow: 7px 7px 5px rgb(66, 85, 160);
+  backdrop-filter: blur(20px);
+  border: 4px solid rgb(246, 221, 195);
+  z-index: 5;
+  margin: 2em;
+  padding: 30px;
+  text-align: justify;
+  border-radius: 14px;
+}
